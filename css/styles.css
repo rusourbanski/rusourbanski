@@ -1,0 +1,643 @@
+:root{
+    --oscura : #212121 ;
+    --colorSecundario: #6f0df0 ;
+
+
+    --Titulos : 'Montserrat', sans-serif;
+    --textos : 'Roboto', sans-serif;
+    
+    
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+* , *:before , *:after {
+    box-sizing: inherit;
+}
+
+
+.padd{
+    padding: 100px;
+}
+
+.header{
+    background-color:var(--colorSecundario);
+    color: white;
+    font-family: var(--Titulos);
+    font-size: 1.5rem;
+    display: flex;
+    padding-top: 10px;
+    height: 3.5rem;
+}
+
+.navegacion_titulo{
+    font-family: var(--Titulos);
+    font-size: 3rem;
+    text-transform: uppercase;
+
+}
+
+.navegacion_span{
+    color: red;
+    font-weight: bolder;
+}
+
+.telefono{
+    text-transform: uppercase;
+}
+
+
+.navegacion_enlaces{
+    text-align: center;
+
+}
+.navegacion_enlaces a{
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+    
+}
+@media (min-width : 768px) {
+    .navegacion_titulo{
+        font-family: var(--Titulos);
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+    .collapse{
+        display: flex;
+        justify-content: flex-end; 
+        padding-right: 100px;  
+          
+    }
+    .navegacion_enlaces a{
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-right: 50px;
+    }
+    .navegacion_enlaces a:hover{
+        background-color: rgba(107, 105, 105, 0.664);
+        border-radius: 5px;
+        font-weight:100px;
+     
+  
+}
+}
+.navegacion_enlaces a:hover{
+   background-color: rgba(107, 105, 105, 0.664);
+   border-radius: 5px;
+   font-weight: 800px;
+   color: red;
+
+
+
+}
+
+.img-cabezera{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("../img/banner2.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ 
+.img-texto{
+    color: white;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.img-texto h1{
+    font-size: 5rem;
+    font-family: var(--Titulos);
+    font-weight: 700;
+    padding: 20px;
+    color: #ffffff;
+    text-shadow: 10px 5px var(--colorSecundario);
+   
+}
+.img-texto p{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--textos);
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-shadow: -3px 4px 6px white
+}
+.img-texto button{
+    color: red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+@media (min-width : 768px) {
+    .img-texto h1{
+        display: flex;
+        justify-content: center;
+        font-size: 10rem;
+
+    }
+    .img-texto p{
+
+        font-size: 2rem;
+    }
+
+}
+.servicios{
+    height: 1500px;
+}
+@media (min-width : 768px) {
+    .servicios{
+        height: 900px;
+    }
+  
+}
+.servicios h1{
+   display: flex;
+   justify-content: center;
+   font-size: 7rem;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: var(--Titulos);
+   padding-top: 2rem;
+   padding-bottom: 5rem;
+   text-decoration:underline var(--colorSecundario);
+   font-weight: 700;
+   
+}
+@media (min-width :768px ) {
+  
+    .servicios h1{
+        font-size: 10rem;
+        padding-top: 8rem;
+
+}
+}
+.servicio_texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.servicio_texto h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--colorSecundario);
+    font-weight: bolder;
+    font-family: var(--Titulos);
+    
+}
+
+.servicio_texto p{
+    font-family: var(--Titulos);
+    font-size: 2.5rem;
+    padding-top: 10px;
+}
+
+ 
+.footer_container{
+    border-top: 5px var(--colorSecundario) solid;
+    
+}
+.footer ul{
+    
+    justify-content: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: var(--Titulos);
+    text-align: center;
+}
+.footer_redes{
+    display: flex;
+}
+.footer_redes li{
+       padding: 6px;
+    
+}
+
+.footer h3{
+    text-transform: uppercase;
+    font-family: var(--Titulos);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 3rem;
+}
+
+.copy{
+    text-align: center;
+}
+
+.footer_menu{
+    font-size: 2rem;
+    text-decoration: none;
+}
+.footer_menu a{
+    color: white;
+    text-decoration: none;
+    padding: 1px;
+}
+.footer_menu a:hover{
+    background-color: rgba(107, 105, 105, 0.664);
+    border-radius: 5px;
+    font-weight: 800px;
+    color: red;
+    padding: 10px;
+}
+
+.footer_digital{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center
+}
+
+.footer_digital p{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #6f0df0;
+    text-shadow: 2px 2px white ;
+}
+
+.footer_digital h4{
+    font-family: var(--Titulos);
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.digital{
+    color: red;
+    font-weight: bolder;
+}
+
+
+
+
+
+.faq h2{
+    color: #6f0df0;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: var(--Titulos);
+    text-transform: uppercase;
+    
+}
+
+.accordion-button{
+    font-family: var(--textos);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #6f0df0;
+    font-weight: 500;
+}
+
+.acordion{
+    color: red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+}
+
+.red:hover{
+    scale: 1.2;
+}
+
+
+/*galeria     */
+.img-container {
+    display: grid;
+    padding: 80px;
+    gap: 10px;
+    height: 1650px;
+    justify-content: center;
+    padding-top: 10px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 320px);
+    grid-template-areas: "foto1 foto1" 
+                         "foto2 foto2"
+                         "foto3 foto3"
+                         "foto4 foto4"
+                         "foto5 foto5";
+  }
+
+.foto {
+  border: 5px solid #333;
+  border-radius: 10px;
+  transition: 2s all;
+  border: 2px solid #333;
+
+}
+.foto:hover {
+  transform: scale(1.05);
+  transition: 2s all;
+}
+
+.foto1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: foto1;
+  background-image: url(../img/foto1.jpg);
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.foto2 {
+  background-image: url(../img/foto2.jpg);
+  grid-area: foto2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto3 {
+  background-image: url(../img/foto3.jpg);
+  grid-area: foto3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto4 {
+  background-image: url(../img/foto4.jpg);
+  grid-area: foto4;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto5 {
+  background-image: url(../img/foto5.jpg);
+  background-position: center;
+  grid-area: foto5;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.foto6 {
+  background-image: url(../img/foto6.png);
+  grid-area: foto6;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media  (min-width: 768px) {
+    .img-container {
+        display: grid;
+        padding: 80px;
+        gap: 30px;
+        height: 1550px;
+        justify-content: center;
+        grid-template-columns: repeat(6, 17%);
+        grid-template-rows: repeat(5, 270px);
+        grid-template-areas: "foto1 foto1 foto2 foto2 foto3 foto3"
+                             "foto1 foto1 foto2 foto2 foto3 foto3" 
+                             "foto1 foto1 foto4 foto4 foto5 foto5"
+                             "foto1 foto1 foto4 foto4 foto5 foto5";
+      }
+      
+      .foto {
+        border: 1px solid var(--colorSecundario);
+        border-radius: 10px;
+        transition: 2s all;
+     
+        
+    }
+}
+
+.titulo_galeria{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 10px 5px var(--colorSecundario);
+    text-decoration: overline;
+    padding-top: 20px;
+}
+
+
+.titulo_tabla{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 10px 5px var(--colorSecundario);
+    padding-top: 20px;
+}
+
+.titulo_meta{
+    color: red !important;
+}
+
+
+.contacto_main {
+    background-color: #333;
+  }
+  
+  .titulocontacto h3 {
+    color: white;
+    text-shadow: 3px 2px #333;
+    font-size: 4em;
+    background-color:var(--colorSecundario);
+    width: 100%;
+    text-align: center;
+    font-family: var(--Titulos);
+  }
+  
+  .form {
+    padding-bottom: 25px;
+  }
+  
+  .formname {
+    background-color: var(--colorSecundario);
+    color: white;
+    font-size: 1em;
+    width: 120px;
+    text-align: center;
+    font-family: var(--Titulos);
+    transform: skew(8deg);
+    text-shadow: 2px 2px black;
+    border-style: double;
+  }
+  
+  .btn-enviar {
+    color: white;
+    font-family: var(--Titulos);
+    background-color: green;
+    font-size: 1em;
+    text-transform: uppercase;
+    box-shadow: 3px 2px 1px #333;
+  }
+  
+  .btn-enviar:hover {
+    background-color: greenyellow;
+    color: var(--colorSecundario)
+  }
+  
+  .btn-borrar {
+    color: white;
+    font-family: var(--Titulos);
+    background-color: rgb(69, 71, 69);
+    font-size: 1em;
+    text-transform: uppercase;
+    box-shadow: 3px 2px 1px #333;
+  }
+  
+  .btn-borrar:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .form__group {
+    position: relative;
+    padding: 20px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required,
+  .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  .formname {
+    background-color:var(--colorSecundario);
+    color: white;
+    font-size: 1em;
+    width: 120px;
+    text-align: center;
+    font-family: var(--Titulos);
+    transform: skew(8deg);
+    text-shadow: 2px 2px black;
+    border-style: double;
+  }
+
+  .titulo_contacto{
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color:var(--colorSecundario);
+    text-shadow: 5px 5px rgb(114, 109, 109);
+    padding-top: 20px;
+}
+
+.titulo_meta{
+    color: red!important;
+}
+
+.campanas{
+    height: 1200px;
+    
+
+}
+.titulo_campana{
+    font-family: var(--Titulos);
+    font-size: 12rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20rem;
+}
+
+.campana_contenido{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 51rem;
+
+}
+
+
+.face_foto p{
+    font-family: var(--textos);
+    font-size: 2rem;
+    text-align: center;
+    padding-right: 3rem
+
+}
+
+.face{
+    color: blue;
+}
+
+.btn-info{
+    padding: 10px;
+    background-color: var(--colorSecundario);
+    color: #fff;
+    font-family: var(--Titulos);
+    font-size: 5rem;
+    border-radius: 50px 100px ;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-info:hover{
+    background-color:#5000b8 ;
+}
